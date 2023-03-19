@@ -28,6 +28,7 @@ Indonesia' Badan Pusat Statistik (Central Statistical Body): https://www.bps.go.
 
 ### Best models
 We performed a grid search over SARIMA order parameters and found that the best models to describe the time series are:
+
 -) Export values: SARIMA(0,1,1)(2,0,0)[12]      
 -) Export weights: SARIMA(0,1,0)(2,0,0)[12]   
 -) Import values: SARIMA(0,1,1)(0,0,1)[12]      
@@ -40,10 +41,13 @@ We performed a grid search over SARIMA order parameters and found that the best 
 ![forecastimp_weight](https://user-images.githubusercontent.com/5288149/226216796-8e10d996-791f-457f-9d1f-09f907b2b162.png)
 
 The SMAPE values for our forecasts are:
+
 -) Export values: 4.92   
 -) Export weights: 6.93   
 -) Import values: 5.97      
 -) Import weights: 6.39
+
+While the SMAPE measures indicates a good fit, note that the actual confidence intervals are quite wide! This indicates the fact that the patterns in our time series is hard to predict. 
 
 ### Existence of cointegration
 The result for the augmented Engle-Granger cointegration p-value between export value and import value is 0.056 while the p-value between export value and import weight is 0.076 (the null hypothesis is no cointegration). Neither is strong enough to claim existence of cointegration with significant confidence.
