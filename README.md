@@ -12,10 +12,10 @@ Indonesia is one of the world's largest exporter of raw and agricultural product
 ### Cointegration of import and export 
 Policies tend to create convergence between imports and exports. This has been tested for 50 countries, where over the quarterly period of 1973 to 1998, where all 50 countries (except for Mexico) show strong signs of cointegration between imports and exports (https://www.sciencedirect.com/science/article/abs/pii/S1059056001001010). 
 
-However, 1998 is the end of the New Order Era in Indonesia. Post 1998, the Indonesian government placed many new trade policies that might changed the long-run relationships between import and export. I would like to check on whether cointegration between import and export is maintained in the post New Order Era.
+However, 1998 is the end of the New Order Era in Indonesia. Post 1998, the Indonesian government placed many new trade policies that might changed the long-run relationships between import and export. I would like to check on whether cointegration between import and export is maintained about a decade after the end of the New Order Era.
 
 ## Description of data
-We have four time series recording the monthly export values (in dollars), export weights (in kg), import values (in dollars), and import values (in kg) ranging from January 2013 to December 2022. 
+We have four time series recording the monthly export values (in dollars), export weights (in kg), import values (in dollars), and import values (in kg) ranging from January 2014 to December 2022. 
 
 ## Data Source
 Indonesia' Badan Pusat Statistik (Central Statistical Body): https://www.bps.go.id/subject/8/ekspor-impor.html#subjekViewTab3
@@ -27,7 +27,13 @@ Indonesia' Badan Pusat Statistik (Central Statistical Body): https://www.bps.go.
 ## Results
 
 ### Best models
-We found that the best models to describe the time series are:
+We performed a grid search over SARIMA order parameters and found that the best models to describe the time series are:
+-) Export values: SARIMA(0,1,1)(2,0,0)[12]      
+-) Export weights: SARIMA(0,1,0)(2,0,0)[12]   
+-) Import values: SARIMA(0,1,1)(0,0,1)[12]      
+-) Import weights: SARIMA(0,1,1)(0,0,2)[12]  
+
+
 
 
 ### Existence of cointegration
