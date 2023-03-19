@@ -33,8 +33,17 @@ We performed a grid search over SARIMA order parameters and found that the best 
 -) Import values: SARIMA(0,1,1)(0,0,1)[12]      
 -) Import weights: SARIMA(0,1,1)(0,0,2)[12]  
 
+### Forecasts
+![forecastexp_dol](https://user-images.githubusercontent.com/5288149/226216780-dd8a5f7c-1610-4f44-a4f6-a9033262abef.png)
+![forecastexp_weight](https://user-images.githubusercontent.com/5288149/226216789-2aced4a9-8434-46db-99e5-b5febe4b9bee.png)
+![forecastimp_dol](https://user-images.githubusercontent.com/5288149/226216794-260c6a01-a983-435a-9f8d-bd714421d886.png)
+![forecastimp_weight](https://user-images.githubusercontent.com/5288149/226216796-8e10d996-791f-457f-9d1f-09f907b2b162.png)
 
-
+The SMAPE values for our forecasts are:
+-) Export values: 4.92   
+-) Export weights: 6.93   
+-) Import values: 5.97      
+-) Import weights: 6.39
 
 ### Existence of cointegration
 The result for the augmented Engle-Granger cointegration p-value between export value and import value is 0.056 while the p-value between export value and import weight is 0.076 (the null hypothesis is no cointegration). Neither is strong enough to claim existence of cointegration with significant confidence.
