@@ -19,9 +19,10 @@ Indonesia' Badan Pusat Statistik (Central Statistical Body): https://www.bps.go.
 
 ## Technologies Used
 1) pmdarima: SARIMA to model and forecast the time series 
-2) statsmodels: Augmented Engle-Granger two-step cointegration test 
+2) statsmodels: Augmented Engle-Granger two-step cointegration test and Ljung-Box test for time-series residuals
 
 ## Results
+
 
 ### Existence of cointegration
 The result for the augmented Engle-Granger cointegration p-value between export value and import value is 0.056 while the p-value between export value and import weight is 0.076 (the null hypothesis is no cointegration). Neither is strong enough to claim existence of cointegration with significant confidence.
