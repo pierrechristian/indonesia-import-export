@@ -18,9 +18,13 @@ However, 1998 is the end of the New Order Era in Indonesia. Post 1998, the Indon
 Indonesia' Badan Pusat Statistik (Central Statistical Body): https://www.bps.go.id/subject/8/ekspor-impor.html#subjekViewTab3
 
 ## Technologies Used
-1) SARIMA to model and forecast the time series 
-2) Augmented Engle-Granger two-step cointegration test 
+1) pmdarima: SARIMA to model and forecast the time series 
+2) statsmodels: Augmented Engle-Granger two-step cointegration test 
 
 ## Results
 
+### Existence of cointegration
+The result for the augmented Engle-Granger cointegration p-value between export value and import value is 0.056 while the p-value between export value and import weight is 0.076 (the null hypothesis is no cointegration). Neither is strong enough to claim existence of cointegration with significant confidence.
+
 ## Future Directions
+
