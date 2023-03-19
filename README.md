@@ -47,10 +47,10 @@ The SMAPE values for our forecasts are:
 -) Import values: 5.97      
 -) Import weights: 6.39
 
-While the SMAPE measures indicates a good fit, note that the actual confidence intervals are quite wide! This indicates the fact that the patterns in our time series is hard to predict. 
+While the SMAPE measures indicates a good fit, note that the actual confidence intervals are quite wide -- certainly, too wide for me to be comfortable in using them to build a trading strategy or inform a political decision! This simply indicates the fact that the patterns in our time series is hard to predict. 
 
 ### Existence of cointegration
-The result for the augmented Engle-Granger cointegration p-value between export value and import value is 0.056 while the p-value between export value and import weight is 0.076 (the null hypothesis is no cointegration). Neither is strong enough to claim existence of cointegration with significant confidence.
+The result for the augmented Engle-Granger cointegration p-value between export value and import value is 0.056 while the p-value between export value and import weight is 0.076 (the null hypothesis is no cointegration). Neither is strong enough to claim existence of cointegration with significant confidence. If it is true that a healthy economy should strive for cointegration between exports and imports, this result argues that it might be necessary for Indonesia to tweak its export/import policies! 
 
 ## Future Directions
 
