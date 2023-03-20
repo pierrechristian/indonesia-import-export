@@ -14,7 +14,7 @@ Policies tend to create convergence between imports and exports. This has been t
 
 However, 1998 is the end of the New Order Era in Indonesia. Post 1998, the Indonesian government placed many new trade policies that might changed the long-run relationships between import and export. I would like to check on whether cointegration between import and export is maintained about a decade after the end of the New Order Era.
 
-## Description of data
+## Description of Data
 We have four time series recording the monthly export values (in dollars), export weights (in kg), import values (in dollars), and import values (in kg) ranging from January 2014 to December 2022. 
 
 ## Data Source
