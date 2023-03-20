@@ -40,7 +40,7 @@ We performed a grid search over SARIMA order parameters and found that the best 
 ![forecastimp_dol](https://user-images.githubusercontent.com/5288149/226216794-260c6a01-a983-435a-9f8d-bd714421d886.png)
 ![forecastimp_weight](https://user-images.githubusercontent.com/5288149/226216796-8e10d996-791f-457f-9d1f-09f907b2b162.png)
 
-The SMAPE values for our forecasts are:
+The SMAPE values for our predictions are:
 
 -) Export values: 4.92   
 -) Export weights: 6.93   
