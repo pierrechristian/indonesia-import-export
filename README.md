@@ -50,7 +50,17 @@ The SMAPE values for our predictions are:
 The SMAPE values indicate a good fit, i.e., that we captured the general trend of the time series. However, the actual confidence intervals are quite wide -- certainly, too wide for me to be comfortable in using them to build a trading strategy or inform a political decision! This simply indicates the fact that the patterns in our time series is hard to predict. 
 
 ### Existence of cointegration
-The result for the augmented Engle-Granger cointegration p-value between export value and import value is 0.056 while the p-value between export value and import weight is 0.076 (the null hypothesis is no cointegration). Neither is strong enough to claim existence of cointegration with significant confidence. If it is true that a healthy economy should strive for cointegration between exports and imports, this result argues that it might be necessary for Indonesia to tweak its export/import policies! 
+The result for the augmented Engle-Granger cointegration p-value between export value and import value is 0.056 while the p-value between export value and import weight is 0.076 (the null hypothesis is no cointegration). Neither is strong enough to claim existence of cointegration with significant confidence. If it is true that a healthy economy should strive for cointegration between exports and imports, this result argues that it might be necessary for Indonesia look into its export/import policies! 
 
-## Future Directions
+## Possible improvements and future directions
+We identified a few weaknesses in our analysis that could be improved in the future:
 
+1) Looking at the residual QQ-plots and histograms, we found deviations from normality. This will affect the widths of the confidence intervals of our forecasts. Future work can perform modelling with other distributions (e.g., Student's t or skewed-t distributions).
+
+2) Extending the time series included in the analysis from 2014 down to 1998 would give more baseline for the model to learn the pattern in the time series (especially the cointegration pattern). Care should be taken when using datapoints near 1998, as post-New Order policies might have not taken effect yet. 
+
+Here are some future research directions that could be interesting to explore:
+
+1) Performing similar analysis to particular sectors of imports/exports, e.g., just agricultural products, or even single items like coffee or cocoa.
+2) Exploring relationships between Indonesia's imports/exports and various environmental time series (e.g., temperature or rainfall time series) with vector auto-regression.
+3) Analyzing differences in the imports/exports time series between the post-New Order era and the New Order era.
