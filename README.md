@@ -27,7 +27,7 @@ Indonesia' Badan Pusat Statistik (Central Statistical Body): https://www.bps.go.
 ## Results
 
 ### Best models
-We performed a grid search over SARIMA order parameters and found that the best models to describe the time series are:
+We performed a search over SARIMA order parameters and found that the best models to describe the time series are:
 
 -) Export values: SARIMA(0,1,1)(2,0,0)[12]      
 -) Export weights: SARIMA(0,1,0)(2,0,0)[12]   
