@@ -20,7 +20,7 @@ We have four time series recording the monthly export values (in dollars), expor
 ## Data Source
 Indonesia' Badan Pusat Statistik (Central Statistical Body): https://www.bps.go.id/subject/8/ekspor-impor.html#subjekViewTab3
 
-## Technologies Used
+## Notable Packages Used
 1) pmdarima: SARIMA to model and forecast the time series 
 2) statsmodels: Augmented Engle-Granger two-step cointegration test and Ljung-Box test for time-series residuals
 
